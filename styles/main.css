@@ -1,0 +1,236 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    /* used to calculate rem values */
+    font-size: 16px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(51, 51, 51);
+    height: 2000px;
+}
+
+a {
+    color: unset;
+    text-decoration: none;
+}
+
+
+/* Start of Header Syles */
+header {
+    position: sticky;
+    width: 100%;
+    top: 0;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+
+}
+
+.logo {
+    font-size: 42px;
+    font-weight: bold;
+}
+
+nav {
+    font-size: 24px;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 12px;
+    }
+
+    nav {
+        display: none
+    }
+}
+
+
+.nav-link {
+    opacity: 0.75;
+    margin: 0 20px;
+    font-weight: 500;
+    transition: all 0.2s
+}
+
+.nav-link:hover {
+    opacity: 1;
+    font-size: 25px;
+}
+
+.download-btn {
+    background-color: #04DDB2;
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 15px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    transition: all 0.5s
+}
+
+.download-btn:hover {
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+/* End of Header Syles */
+
+/* Start of Hero Styles */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.hero h1 {
+    font-size: 3.75rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: #04DDB2
+}
+
+.hero p {
+    font-size: 1.5rem;
+    width: 50%;
+    line-height: 1.5
+}
+
+/* End of Hero Styles */
+
+/* Start of Download Section Styles */
+.download-section {
+    margin: 10rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* @media screen and (max-width: 768px) {
+    .download-section {
+        margin: 120px 0
+    }
+} */
+
+.download-section h2 {
+    font-size: 3.5rem;
+    width: 50%;
+    margin-bottom: 30px;
+}
+
+/* @media screen and (max-width: 768px) {
+    .download-section h2 {
+        font-size: 2rem;
+    }
+} */
+
+/* End of Download Section Styles */
+
+
+/* Start of Info Styles */
+.info-section {
+    margin-top: 50px;
+
+}
+
+.info-section .info-img {
+    width: 75%;
+    margin: auto;
+    height: 500px;
+    background-color: #eee;
+    border-radius: 5px;
+    /* box-shadow: 15px 20px 1px 0px rgb(-2 0 0); */
+    transition: all 0.2;
+}
+
+.info-section .info-img:hover {
+    /* box-shadow: 30px 40px 1px 0px rgb(-2 0 0); */
+}
+
+/* End of Info Styles */
+
+
+/* Start of Footer Styles */
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    /* wrap to responsive */
+    justify-content: space-between;
+    padding: 6rem 12rem;
+}
+
+footer .title {
+    display: inline-block;
+    font-size: 42px;
+    font-weight: bold;
+}
+
+footer .content {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    line-height: 2;
+}
+
+footer .icon {
+    width: 3rem;
+    height: 3rem;
+    background-color: #04DDB2;
+    border-radius: 50%;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    font-size: 1.25rem;
+    margin: 1.5rem 0;
+}
+
+footer ul li.icon {
+    margin-top: 0;
+}
+
+footer ul li.footer-list-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 1.75rem
+}
+
+@media screen and (max-width: 768px) {
+    footer {
+        padding: 6rem;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    footer ul:last-of-type {
+        display: flex;
+        gap: 10px;
+    }
+}
+
+/* End of Footer Styles */
